@@ -1,0 +1,271 @@
+:root {
+    --primario: #040F57;
+    --secundario: #0B28E3;
+    --blancoOpaco: #D3D3D3;
+    --negro: #000000;
+    --fuentePrincipal: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #535353;
+}
+
+/* h1,
+h2,
+h3 {
+    font-weight: 900;
+    margin: 2rem 0;
+} */
+
+/* h1 {
+    font-size: 5rem;
+} */
+
+h2,
+h3,
+h4 {
+    font-weight: 600;
+    color: black;
+
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+/*
+h3 {
+    font-size: 3rem;
+} */
+
+a {
+    text-decoration: none;
+    color: var(--primario);
+    font-weight: 500;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+[class$="__container"] {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+[class$="__button"] {
+    padding: 0.8rem 1rem;
+    background-color: var(--secundario);
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+[class$="__button--nofill"] {
+    padding: 0.8rem 1rem;
+    background-color: unset;
+    border: .1rem solid var(--secundario);
+    border-radius: 0.5rem;
+    color: white;
+    font-weight: 500;
+}
+
+[class$="__subtitle"],
+[class$="__info-heading"] {
+    display: flex;
+    /* align-items: center;s */
+    gap: .5rem;
+    color: black;
+}
+
+
+
+/* [class$="__heading"] {
+    text-align: center;
+    margin-bottom: 5rem;
+} */
+
+.header {
+    padding: 2rem 0;
+    background-color: var(--primario);
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__icon-logo {
+    display: flex;
+    gap: 1rem;
+}
+
+.logo {
+    margin: 0;
+    color: #ffffff;
+    letter-spacing: -.1rem;
+    font-weight: 600;
+}
+
+.hero {
+    background: linear-gradient(180deg, var(--primario) 0%, #151725 100%);
+    padding: 5rem 0;
+}
+
+.hero__heading {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+
+.hero__text {
+    color: white;
+    text-align: center;
+}
+
+.hero__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero__logos {
+    margin-top: 7rem;
+}
+
+.hero__p {
+    color: #6B6C74;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.hero__logos-grid {
+    display: grid;
+    place-items: center;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nosotros {
+    padding: 5rem 0;
+}
+
+
+
+.nosotros__grid-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info__heading {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--primario);
+}
+
+.info p {
+    margin: 0;
+}
+
+.services {
+    background-color: var(--primario);
+    padding: 5rem 0;
+
+}
+
+.services p {
+    color: var(--blancoOpaco);
+}
+
+.services__heading,
+.services__info-heading,
+.services__subtitle {
+    color: #ffffff;
+}
+
+.services__info-heading img {
+    background-color: #040B3C;
+    border-radius: .4rem;
+    padding: .3rem;
+}
+
+.services__grid-info {
+    margin-bottom: 2rem;
+}
+
+.products {
+    padding: 5rem 0;
+}
+
+.products__cards {
+    display: flex;
+    margin-bottom: 5rem;
+}
+
+.products__slider-container {
+    display: flex;
+    overflow: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+}
+
+.products__card-container {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
+
+.card {
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .7rem;
+    border: .1rem solid #AEB4DF;
+    border-radius: .6rem;
+    padding: 2rem;
+
+}
+
+.card__heading {
+    color: var(--primario);
+    margin: 2rem 0 0 0;
+}
+
+.card__text {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.products__allies h2 {
+    text-align: center;
+    color: var(--secundario);
+}
+
+
+.products__bancos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 2rem;
+}
