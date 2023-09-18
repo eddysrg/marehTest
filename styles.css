@@ -124,6 +124,12 @@ img {
     font-weight: 600;
 }
 
+@media (min-width: 768px) {
+    .img-logo {
+        display: none;
+    }
+}
+
 .hero {
     background: linear-gradient(180deg, var(--primario) 0%, #151725 100%);
     padding: 5rem 0;
@@ -268,4 +274,59 @@ img {
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     row-gap: 2rem;
+}
+
+.grc {
+    background: linear-gradient(180deg, #D71D28 0%, #B70E2F 100%);
+    color: white;
+    padding: 3rem 0;
+}
+
+.grc__subtitle,
+.grc__heading,
+.aula__heading,
+.aula__subtitle {
+    color: white;
+}
+
+.grc__button {
+    color: black;
+    background-color: white;
+}
+
+.aula {
+    background: linear-gradient(180deg, #9043C3 0%, #6A00B0 100%);
+    padding: 3rem 0;
+    color: white;
+}
+
+.aula__button {
+    color: white;
+    background-color: #CF97F3;
+}
+
+.footer {
+    background: linear-gradient(180deg, var(--primario) 0%, #151725 100%);
+    padding: 5rem 0 2rem 0;
+    color: white;
+}
+
+.footer__heading {
+    color: var(--secundario);
+    font-weight: 600;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer__legend {
+    text-align: center;
+    margin-bottom: 0;
 }
