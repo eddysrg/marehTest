@@ -185,6 +185,10 @@ img {
   margin-top: 7rem;
 }
 
+.hero__logo {
+  width: 8rem;
+}
+
 .hero__p {
   color: #6b6c74;
   text-align: center;
@@ -195,7 +199,7 @@ img {
   display: grid;
   place-items: center;
   gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .nosotros {
@@ -297,8 +301,8 @@ img {
 .products__bancos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  row-gap: 2rem;
+  place-items: center;
+  gap: 4rem;
 }
 
 .grc {
